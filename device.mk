@@ -343,6 +343,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.3-service.xiaomi-libperfmgr \
+    powerhint.json
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.2 \
