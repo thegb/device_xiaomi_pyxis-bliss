@@ -56,16 +56,8 @@ void load_pyxis() {
 void vendor_load_properties() {
     std::string region = android::base::GetProperty("ro.boot.hwc", "");
 
-    if (region.find("CN") != std::string::npos) {
-        load_pyxis();
-    } else if (region.find("GLOBAL") != std::string::npos) {
-        load_pyxisglobal();
-    } else {
-        LOG(ERROR) << __func__ << ": unexcepted region!";
-    }
-    
-    property_override("ro.oem_unlock_supported", "0");
-    property_override("ro.apex.updatable", "true");
-    property_override("ro.control_privapp_permissions", "log");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys");
+	property_override("ro.oem_unlock_supported", "0");
+	property_override("ro.apex.updatable", "true");
+	property_override("ro.control_privapp_permissions", "log");
+	property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys");
 }
