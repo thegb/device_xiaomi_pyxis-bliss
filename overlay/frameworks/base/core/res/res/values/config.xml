@@ -1185,7 +1185,7 @@
     <bool name="config_enableSmartPixels">true</bool>
 
     <!-- FOD Icon Dimming -->
-    <bool name="config_targetUsesInKernelDimming">true</bool>
+    <bool name="config_targetUsesInKernelDimming">false</bool>
 
     <!-- Whether to use in-built Screen Record service -->
     <bool name="config_showScreenRecord">true</bool>
