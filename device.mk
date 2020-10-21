@@ -347,9 +347,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.xiaomi-libperfmgr \
-    powerhint.json
+# PRODUCT_PACKAGES += \
+#    android.hardware.power@1.3-service.xiaomi-libperfmgr \
+#    powerhint.json
 
 # Radio
 PRODUCT_PACKAGES += \
